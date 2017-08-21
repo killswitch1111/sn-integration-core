@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_int_core.IntegrationCoreConstants</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>IntegrationCoreConstants</name>
+        <script><![CDATA[var IntegrationCoreConstants = Class.create();
+IntegrationCoreConstants.INTEGRATION_TABLE = "sn_sc_int_core_integration";
+IntegrationCoreConstants.ENDPOINT_TABLE = "sn_sc_int_core_endpoint";]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-21 19:10:05</sys_created_on>
+        <sys_id>168b6b5a67c00300cf1514db37415a58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IntegrationCoreConstants</sys_name>
+        <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
+        <sys_update_name>sys_script_include_168b6b5a67c00300cf1514db37415a58</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-21 19:10:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

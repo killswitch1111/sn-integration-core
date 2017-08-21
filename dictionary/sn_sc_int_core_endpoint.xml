@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Endpoints" max_length="40" name="sn_sc_int_core_endpoint" type="collection">
+        <element label="Integration" max_length="32" name="integration" reference="sn_sc_int_core_integration" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Uri" max_length="100" name="uri" type="string"/>
+        <index name="index">
+            <element name="integration"/>
+        </index>
+    </element>
+</database>
