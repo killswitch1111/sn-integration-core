@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="sn_sc_int_core.field_map_user" name="sn_sc_int_core.field_map_user">651987cb67010300b8cc14db37415a79</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-09-11 17:36:58</sys_created_on>
+        <sys_id>ed1987cb67010300b8cc14db37415a7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>651987cb67010300b8cc14db37415a79</sys_name>
+        <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
+        <sys_update_name>sys_embedded_help_role_ed1987cb67010300b8cc14db37415a7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-11 17:36:58</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

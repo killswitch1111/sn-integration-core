@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-09-11 17:36:58</sys_created_on>
+        <sys_id>f1198bcb67010300b8cc14db37415a83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_sc_int_core_field_map.sn_sc_int_core.field_map_user</sys_name>
+        <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
+        <sys_security_acl display_value="sn_sc_int_core_field_map">f9198bcb67010300b8cc14db37415a80</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f1198bcb67010300b8cc14db37415a83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-11 17:36:58</sys_updated_on>
+        <sys_user_role display_value="sn_sc_int_core.field_map_user" name="sn_sc_int_core.field_map_user">651987cb67010300b8cc14db37415a79</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

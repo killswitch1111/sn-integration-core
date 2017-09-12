@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Field Map" max_length="40" name="sn_sc_int_core_field_map" type="collection">
+        <element label="Integration" max_length="32" name="integration" reference="sn_sc_int_core_integration" type="reference"/>
+        <element label="Script" max_length="10000" name="script" type="script"/>
+        <element label="Source Field" max_length="100" name="source_field" type="string"/>
+        <element label="Target Field" max_length="100" name="target_field" type="string"/>
+        <element label="Target Table" max_length="80" name="target_table" type="table_name"/>
+        <element label="Use Script" max_length="40" name="use_script" type="boolean"/>
+        <index name="index">
+            <element name="integration"/>
+        </index>
+    </element>
+</database>

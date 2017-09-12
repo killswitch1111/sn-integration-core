@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Data Mapping" max_length="40" name="sn_sc_int_core_data_mapping" type="collection"/>
+</database>
