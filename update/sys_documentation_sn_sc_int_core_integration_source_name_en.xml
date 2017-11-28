@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="name" label="Name" language="en" table="sn_sc_int_core_integration_source">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <help/>
+            <hint/>
+            <label>Name</label>
+            <language>en</language>
+            <name>sn_sc_int_core_integration_source</name>
+            <plural>Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-12 18:43:01</sys_created_on>
+            <sys_id>3ac1a82767050300b8cc14db37415a48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Name</sys_name>
+            <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
+            <sys_update_name>sys_documentation_sn_sc_int_core_integration_source_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-12 18:43:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

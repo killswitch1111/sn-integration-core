@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Data Mapping" max_length="40" name="sn_sc_int_core_data_mapping" type="collection"/>
+    <element label="Data Mapping" max_length="40" name="sn_sc_int_core_data_mapping" type="collection">
+        <element label="Integration Source" max_length="32" name="integration_source" reference="sn_sc_int_core_integration_source" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element choice="3" default="0" label="type" max_length="40" name="type" type="integer">
+            <choice>
+                <element label="Inbound" sequence="0" value="0"/>
+                <element label="Outbound" sequence="1" value="1"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="integration_source"/>
+        </index>
+    </element>
 </database>

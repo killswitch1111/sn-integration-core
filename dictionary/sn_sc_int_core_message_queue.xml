@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Message Queue" max_length="40" name="sn_sc_int_core_message_queue" type="collection">
+        <element label="Data" max_length="1000000" name="data" type="string"/>
+        <element label="Error" max_length="4000" name="error" type="journal"/>
+        <element label="Integration Source" max_length="32" name="integration_source" reference="sn_sc_int_core_integration_source" type="reference"/>
+        <element label="Log" max_length="4000" name="log" type="journal"/>
+        <element choice="3" default="0" label="Status" max_length="40" name="status" type="integer">
+            <choice>
+                <element label="New" sequence="0" value="0"/>
+                <element label="Ready" sequence="1" value="1"/>
+                <element label="Processing" sequence="2" value="2"/>
+                <element label="Processed" sequence="3" value="3"/>
+                <element label="Error" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="integration_source"/>
+        </index>
+    </element>
+</database>

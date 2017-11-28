@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element attributes="update_synch=true" extends="sys_metadata" label="Field Map" max_length="40" name="sn_sc_int_core_field_map" type="collection">
-        <element label="Integration" max_length="32" name="integration" reference="sn_sc_int_core_integration" type="reference"/>
-        <element label="Script" max_length="10000" name="script" type="script"/>
+        <element label="Data Mapping" max_length="32" name="data_mapping" reference="sn_sc_int_core_data_mapping" type="reference"/>
+        <element default="(function executeMap(current, previous /*null when async*/) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return null;&#13;&#10;})(current, previous);" label="Script" max_length="10000" name="script" type="script"/>
         <element label="Source Field" max_length="100" name="source_field" type="string"/>
         <element label="Target Field" max_length="100" name="target_field" type="string"/>
         <element label="Target Table" max_length="80" name="target_table" type="table_name"/>
+        <element dependent="target_table" dependent_on_field="target_table" label="Target Field" max_length="80" name="target_table_field" type="field_name" use_dependent_field="true"/>
+        <element choice="3" default="0" label="Type" max_length="40" name="type" type="integer">
+            <choice>
+                <element label="Inbound" sequence="0" value="0"/>
+                <element label="Outbound" sequence="1" value="1"/>
+            </choice>
+        </element>
         <element label="Use Script" max_length="40" name="use_script" type="boolean"/>
         <index name="index">
-            <element name="integration"/>
+            <element name="data_mapping"/>
         </index>
     </element>
 </database>

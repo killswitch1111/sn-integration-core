@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Integration Source" max_length="40" name="sn_sc_int_core_integration_source" type="collection">
+        <element label="Endpoint" max_length="32" name="endpoint" reference="sn_sc_int_core_endpoint" type="reference"/>
+        <element label="Integration" max_length="32" name="integration" reference="sn_sc_int_core_integration" type="reference"/>
+        <element label="Name" max_length="1000" name="name" type="string" unique="true"/>
+        <index name="index">
+            <element name="endpoint"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+        <index name="index3">
+            <element name="integration"/>
+        </index>
+    </element>
+</database>

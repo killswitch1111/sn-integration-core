@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>public</access>
+        <access>package_private</access>
         <active>true</active>
-        <api_name>sn_sc_int_core.FieldMap</api_name>
+        <api_name>sn_sc_int_core.QueueStatus</api_name>
         <client_callable>false</client_callable>
         <description/>
-        <name>FieldMap</name>
-        <script><![CDATA[var FieldMap = Class.create();
-FieldMap.prototype = {
-    initialize: function() {
-    },
-
-    type: 'FieldMap'
-};
-
-FieldMap.get = function(){
-		return new FieldMap();
-};]]></script>
+        <name>QueueStatus</name>
+        <script><![CDATA[var QueueStatus = Class.create();
+QueueStatus.NEW = 0;
+QueueStatus.READY = 1;
+QueueStatus.PROCESSING = 2;
+QueueStatus.PROCESSED = 3;
+QueueStatus.ERROR = 4;]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-09-11 17:37:52</sys_created_on>
-        <sys_id>cd498bcb67010300b8cc14db37415ab7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>FieldMap</sys_name>
+        <sys_created_on>2017-09-12 20:08:36</sys_created_on>
+        <sys_id>16e4306b67050300b8cc14db37415a5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>QueueStatus</sys_name>
         <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
-        <sys_update_name>sys_script_include_cd498bcb67010300b8cc14db37415ab7</sys_update_name>
+        <sys_update_name>sys_script_include_16e4306b67050300b8cc14db37415a5c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-12 20:21:11</sys_updated_on>
+        <sys_updated_on>2017-09-12 20:09:48</sys_updated_on>
     </sys_script_include>
 </record_update>

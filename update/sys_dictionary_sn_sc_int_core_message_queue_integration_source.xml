@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="script" table="sn_sc_int_core_field_map">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="integration_source" table="sn_sc_int_core_message_queue">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -15,14 +15,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Script</column_label>
+        <column_label>Integration Source</column_label>
         <comments/>
         <create_roles/>
-        <default_value>(function executeMap(current, previous /*null when async*/) {&#13;
-&#13;
-	// Add your code here&#13;
-	return null;&#13;
-})(current, previous);</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -32,18 +28,18 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>script</element>
+        <element>integration_source</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Script">script</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>10000</max_length>
-        <name>sn_sc_int_core_field_map</name>
+        <max_length>32</max_length>
+        <name>sn_sc_int_core_message_queue</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="sn_sc_int_core_integration_source">sn_sc_int_core_integration_source</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -55,16 +51,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-09-11 17:50:29</sys_created_on>
-        <sys_id>9b590fcb67010300b8cc14db37415aa7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Script</sys_name>
+        <sys_created_on>2017-09-12 18:41:24</sys_created_on>
+        <sys_id>79d0e02767050300b8cc14db37415aaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Integration Source</sys_name>
         <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
-        <sys_update_name>sys_dictionary_sn_sc_int_core_field_map_script</sys_update_name>
+        <sys_update_name>sys_dictionary_sn_sc_int_core_message_queue_integration_source</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-20 22:53:35</sys_updated_on>
+        <sys_updated_on>2017-09-12 18:41:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

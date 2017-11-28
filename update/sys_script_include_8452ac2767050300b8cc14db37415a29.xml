@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_int_core.MessageQueueRecord</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MessageQueueRecord</name>
+        <script><![CDATA[var MessageQueueRecord = Class.create();
+MessageQueueRecord.prototype = {
+    _data: null,
+	_integrationSource: null,
+	_record: null,
+	
+	
+	initialize: function(queueRecord) {
+		this._record = queueRecord;
+    },
+	
+	setStatus: function(status){
+		this._record.status = status;
+		this._record.update();
+	},
+	
+	error: function(err){
+		this._record.error = err;
+		this._record.update();
+	},
+	
+	log: function(log){
+		this._record.log = log;
+		this._record.update();
+	},
+
+    type: 'MessageQueueRecord'
+};
+
+MessageQueueRecord.get = function(queueRecord){
+		return new MessageQueueRecord(queueRecord);
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-09-12 18:45:42</sys_created_on>
+        <sys_id>8452ac2767050300b8cc14db37415a29</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>MessageQueueRecord</sys_name>
+        <sys_package display_value="Integration Core" source="sn_sc_int_core">115d258267000300cf1514db37415ae9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Integration Core">115d258267000300cf1514db37415ae9</sys_scope>
+        <sys_update_name>sys_script_include_8452ac2767050300b8cc14db37415a29</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-09-12 20:15:09</sys_updated_on>
+    </sys_script_include>
+</record_update>
